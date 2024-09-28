@@ -6,6 +6,7 @@ function volume_sphere(event) {
         temp = NaN;
     } else {
         temp = (4 / 3) * Math.PI * Math.pow(temp, 3);
+		temp = temp.toFixed(4)
     }
     document.getElementById('volume').value = temp;
 }
